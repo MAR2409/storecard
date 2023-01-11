@@ -1,0 +1,164 @@
+:root {
+    --color1:hsl(158, 36%, 37%);
+    --color2:hsl(30, 38%, 92%);
+    --color3:hsl(212, 21%, 14%);
+    --color4:hsl(228, 12%, 48%);
+    --color5:hsl(0, 0%, 100%);
+    --font1:'Montserrat', sans-serif;
+    --font2: 'Fraunces', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-main {
+    width: 350px;
+    margin: 15px 10px;
+    height: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: var(--color5);
+}
+
+.card-img img {
+    width: 100%;
+}
+
+.card-section {
+    padding: 20px;
+}
+
+.card-section h2{
+    letter-spacing: 5px;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: .80em;
+    color: var(--color4);
+    font-family: var(--font1);
+    margin-bottom:8px;
+}
+
+.card-section h1 {
+    font-family: var(--font2);
+    font-size:1.95em;
+    margin-bottom:12px;
+}
+
+.card-text {
+    font-family: var(--font1);
+    font-size:.95em ;
+    color: var(--color4);
+    margin-bottom:18px;
+    line-height: 20px;
+}
+
+.card-price {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.card-sale {
+    font-family: var(--font2);
+    font-size: 2em;
+    color: var(--color1);
+    margin-right: 12px;
+}
+
+.card-original {
+   padding-top: 12px; 
+   font-family: var(--font1);
+   font-size: .85em;
+   color: var(--color4);
+   text-decoration: line-through;
+}
+
+.card-button {
+    text-align: center;
+}
+
+section button {
+    border-style: none;
+    padding: 1em 1.5em;
+    width: 96%;
+    background-color: var(--color1);
+    border-radius: 10px;
+    font-family: var(--font1);
+    color: var(--color5);
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+    margin-left: 5px;
+}
+
+section img {
+    margin-right:10px;
+    margin-top: 2px;
+}
+
+button:hover {
+    background-color: var(--color3);
+    cursor: pointer;
+}
+
+@media (min-width:1024px) {
+
+    body {
+        height: 100vh;
+    }
+    
+    .card-main {
+        display:flex;
+        width: 700px;
+        height: 500px;
+    }
+
+    .card-img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .card-img {
+        width: 100%;
+    }
+
+    .card-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 5px 35px;
+        width: 90%;
+    }
+
+
+    .card-section h1 {
+        font-size:2.5em ;
+        line-height: 35px;
+    }
+
+    br {
+        display: none;
+    }
+
+    .card-text {
+        font-size: 1.15em;
+        line-height: 25px;
+    }
+
+    .card-sale {
+        font-size: 2.25em;
+        margin-right: 15px;
+    }
+}
+
+
