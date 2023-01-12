@@ -111,6 +111,29 @@ button:hover {
     cursor: pointer;
 }
 
+.attrition {
+    position: absolute;
+    bottom: 230px;
+    font-family: var(--font1);
+}
+
+footer p {
+    font-size: 12px;
+}
+
+footer a {
+    font-size: 12px;
+    text-decoration: none;
+    color: var(--color1);
+}
+
+footer a:hover {
+    font-size: 16px;
+    color: var(--color4);
+    transition: .45s;
+}
+
+
 @media (min-width:1024px) {
 
     body {
@@ -159,6 +182,37 @@ button:hover {
         font-size: 2.25em;
         margin-right: 15px;
     }
+
+    .attrition {
+        position:absolute;
+        bottom: 150px;
+        font-family: var(--font1);
+    }
+    
+    footer p {
+        font-size: 12px;
+    }
+    
+    footer a {
+        font-size: 12px;
+        text-decoration: none;
+        color: var(--color1);
+    }
+    
+    footer a:hover {
+        font-size: 16px;
+        color: var(--color4);
+        transition: .45s;
+    }
 }
+
+@media (min-width:1600px) {
+    .attrition {
+        position:absolute;
+        bottom: 200px;
+        font-family: var(--font1);
+    }
+}
+
 
 
